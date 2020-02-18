@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: #d0e1d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100%;
+}
+
+.open-me {
+  font-size: 10rem;
+  cursor: pointer;
+}
+
+.poop {
+  position: absolute;
+  font-size: 2rem;
+  transition: bottom 1s;
+  z-index: -1000;
+}
+
+.poop.show {
+  bottom: 0px;
+}
